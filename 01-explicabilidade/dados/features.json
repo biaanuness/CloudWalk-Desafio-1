@@ -1,0 +1,86 @@
+{
+  "schema_version": 1,
+  "id": "solicitacao_id",
+  "target": "inadimplente_90d",
+  "features": [
+    "receita_mensal",
+    "variacao_receita_3m",
+    "volatilidade_receita_6m",
+    "tempo_atividade_meses",
+    "margem_liquida",
+    "saldo_medio",
+    "despesas_fixas_mensais",
+    "divida_atual",
+    "comprometimento_receita",
+    "percentual_vendas_cartao",
+    "taxa_chargeback_90d",
+    "atrasos_12m",
+    "consultas_credito_6m",
+    "valor_solicitado",
+    "prazo_meses",
+    "ticket_medio",
+    "relacionamento_meses",
+    "setor",
+    "canal_origem"
+  ],
+  "categorical_features": [
+    "setor",
+    "canal_origem"
+  ],
+  "categorical_values": {
+    "setor": [
+      "varejo",
+      "servicos",
+      "alimentacao",
+      "comercio_online",
+      "outros"
+    ],
+    "canal_origem": [
+      "aplicativo",
+      "indicacao",
+      "parceiro"
+    ]
+  },
+  "numeric_features": [
+    "receita_mensal",
+    "variacao_receita_3m",
+    "volatilidade_receita_6m",
+    "tempo_atividade_meses",
+    "margem_liquida",
+    "saldo_medio",
+    "despesas_fixas_mensais",
+    "divida_atual",
+    "comprometimento_receita",
+    "percentual_vendas_cartao",
+    "taxa_chargeback_90d",
+    "atrasos_12m",
+    "consultas_credito_6m",
+    "valor_solicitado",
+    "prazo_meses",
+    "ticket_medio",
+    "relacionamento_meses"
+  ],
+  "dtypes": {
+    "solicitacao_id": "object",
+    "receita_mensal": "float64",
+    "variacao_receita_3m": "float64",
+    "volatilidade_receita_6m": "float64",
+    "tempo_atividade_meses": "int64",
+    "margem_liquida": "float64",
+    "saldo_medio": "float64",
+    "despesas_fixas_mensais": "float64",
+    "divida_atual": "float64",
+    "comprometimento_receita": "float64",
+    "percentual_vendas_cartao": "float64",
+    "taxa_chargeback_90d": "float64",
+    "atrasos_12m": "int64",
+    "consultas_credito_6m": "int64",
+    "valor_solicitado": "float64",
+    "prazo_meses": "int64",
+    "ticket_medio": "float64",
+    "relacionamento_meses": "int64",
+    "setor": "object",
+    "canal_origem": "object",
+    "inadimplente_90d": "int64"
+  }
+}

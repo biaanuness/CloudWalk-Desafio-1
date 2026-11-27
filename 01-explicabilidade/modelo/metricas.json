@@ -1,0 +1,66 @@
+{
+  "model_format": "catboost-cbm",
+  "model_sha256": "a35fb3a3764a84fd7c673f932483337a12b17ee7314a85737573e0202313c65b",
+  "feature_manifest_sha256": "f7a124303254394aeda2c633d92f11edbd08e80ed2e58567827fd6d05d6f7b5e",
+  "dataset_seed": 20261117,
+  "training_seed": 20261117,
+  "parameters": {
+    "iterations": 450,
+    "depth": 6,
+    "learning_rate": 0.06,
+    "l2_leaf_reg": 5,
+    "loss_function": "Logloss",
+    "eval_metric": "AUC",
+    "random_seed": 20261117,
+    "thread_count": 2,
+    "task_type": "CPU",
+    "allow_writing_files": false
+  },
+  "early_stopping_rounds": 45,
+  "best_iteration_zero_based": 188,
+  "tree_count": 189,
+  "feature_count": 19,
+  "training_rows": 12600,
+  "validation_rows": 2700,
+  "training_seconds": 1.2441029589972459,
+  "test": {
+    "roc_auc": 0.7918924393390905,
+    "average_precision": 0.5853120684979153,
+    "log_loss": 0.4479087212325351,
+    "brier_score": 0.14412813011523096,
+    "accuracy_threshold_0_5": 0.794074074074074,
+    "precision_threshold_0_5": 0.6656151419558359,
+    "recall_threshold_0_5": 0.31921331316187596,
+    "f1_threshold_0_5": 0.43149284253578735,
+    "confusion_matrix_true_rows_predicted_columns": [
+      [
+        1933,
+        106
+      ],
+      [
+        450,
+        211
+      ]
+    ],
+    "target_rate": 0.24481481481481482,
+    "rows": 2700
+  },
+  "constant_baseline_from_training_rate": {
+    "probability": 0.2446825396825397,
+    "log_loss": 0.5565666528994754,
+    "brier_score": 0.1848805387587133
+  },
+  "versions": {
+    "numpy": "2.2.6",
+    "pandas": "2.2.3",
+    "scikit-learn": "1.6.1",
+    "catboost": "1.2.8"
+  },
+  "python": "3.12.13",
+  "platform": "macOS-26.7.3-arm64-arm-64bit",
+  "data_sha256": {
+    "treino": "95df2da90013f6411593cbd476cf2dce7e1b3f19f8912f4c4f953d7eccd72efd",
+    "validacao": "aea56dae6fc2bbeeaaf6b2d34a9352ff0afa5d9521566e7441ece9b75827e40f",
+    "teste": "dfa6ae26aef7edd757b06ed856ab0cd98c267a150f25c9fe1762850cdc1765b2"
+  }
+}

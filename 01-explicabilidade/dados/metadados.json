@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "synthetic": true,
+  "seed": 20261117,
+  "rows": 18000,
+  "split_strategy": "estratificada aleatoria: treino 70%, validacao 15%, teste 15%",
+  "split_seeds": [
+    20261117,
+    20261118
+  ],
+  "target_definition": "atraso superior a 30 dias observado nos 90 dias apos o credito",
+  "splits": {
+    "treino": {
+      "rows": 12600,
+      "target_rate": 0.2446825396825397,
+      "sha256": "95df2da90013f6411593cbd476cf2dce7e1b3f19f8912f4c4f953d7eccd72efd"
+    },
+    "validacao": {
+      "rows": 2700,
+      "target_rate": 0.24481481481481482,
+      "sha256": "aea56dae6fc2bbeeaaf6b2d34a9352ff0afa5d9521566e7441ece9b75827e40f"
+    },
+    "teste": {
+      "rows": 2700,
+      "target_rate": 0.24481481481481482,
+      "sha256": "dfa6ae26aef7edd757b06ed856ab0cd98c267a150f25c9fe1762850cdc1765b2"
+    }
+  }
+}
