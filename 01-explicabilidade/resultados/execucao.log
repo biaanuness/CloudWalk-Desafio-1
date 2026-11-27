@@ -1,0 +1,35 @@
+18:31:11 INFO Modo: completo | saída: /home/user/cloudwalk-desafio-1/01-explicabilidade/resultados
+18:31:11 INFO Dados: treino=12600, validação=2700, teste=2700 linhas; modelo com 189 árvores
+18:31:11 INFO 1) Escolhendo o tamanho da referência na VALIDAÇÃO (gabarito: 2000 linhas)
+18:31:13 INFO    N=  25  erro relativo=0.221  Jaccard top-3=0.731  0.95 ms/linha
+18:31:14 INFO    N=  50  erro relativo=0.158  Jaccard top-3=0.808  1.84 ms/linha
+18:31:17 INFO    N= 100  erro relativo=0.110  Jaccard top-3=0.862  2.38 ms/linha
+18:31:19 INFO    N= 200  erro relativo=0.097  Jaccard top-3=0.872  2.28 ms/linha
+18:31:22 INFO    N= 400  erro relativo=0.059  Jaccard top-3=0.922  2.41 ms/linha
+18:31:22 INFO    escolhido: N=200 linhas do treino
+18:31:22 INFO 2) Selecionando os três casos do TESTE pelos percentis da probabilidade prevista
+18:31:22 INFO    baixo         S0007173  p=0.064 (base 0.225)  top: valor_solicitado +1.21, receita_mensal -0.66, comprometimento_receita -0.55
+18:31:22 INFO    intermediario S0016371  p=0.180 (base 0.225)  top: comprometimento_receita -0.37, atrasos_12m -0.32, variacao_receita_3m +0.31
+18:31:22 INFO    alto          S0005455  p=0.535 (base 0.225)  top: atrasos_12m +0.37, variacao_receita_3m +0.30, margem_liquida +0.21
+18:31:22 INFO 3) Fidelidade em 300 linhas aleatórias do teste (k = 1..5)
+18:33:11 INFO    aditividade: erro máximo no teste inteiro = 5.8e-15
+18:33:11 INFO    k=1 aleatorio variação média |Δlog-odds|=0.147  correlação previsto×real=0.976
+18:33:11 INFO    k=1 top       variação média |Δlog-odds|=0.604  correlação previsto×real=0.989
+18:33:11 INFO    k=2 aleatorio variação média |Δlog-odds|=0.224  correlação previsto×real=0.975
+18:33:11 INFO    k=2 top       variação média |Δlog-odds|=0.715  correlação previsto×real=0.993
+18:33:11 INFO    k=3 aleatorio variação média |Δlog-odds|=0.299  correlação previsto×real=0.979
+18:33:11 INFO    k=3 top       variação média |Δlog-odds|=0.871  correlação previsto×real=0.995
+18:33:11 INFO    k=4 aleatorio variação média |Δlog-odds|=0.369  correlação previsto×real=0.983
+18:33:11 INFO    k=4 top       variação média |Δlog-odds|=0.896  correlação previsto×real=0.996
+18:33:11 INFO    k=5 aleatorio variação média |Δlog-odds|=0.413  correlação previsto×real=0.985
+18:33:11 INFO    k=5 top       variação média |Δlog-odds|=0.913  correlação previsto×real=0.996
+18:33:11 INFO 4) Estabilidade: 20 referências alternativas e 50 perturbações por caso
+18:33:13 INFO    baixo         repetição Δ=0 | referência Jaccard=0.90 | perturbação Spearman min=0.981, top-3 idêntico=100%, Δprob máx=0.0048
+18:33:13 INFO    intermediario repetição Δ=0 | referência Jaccard=0.55 | perturbação Spearman min=0.993, top-3 idêntico=84%, Δprob máx=0.0127
+18:33:13 INFO    alto          repetição Δ=0 | referência Jaccard=0.97 | perturbação Spearman min=0.993, top-3 idêntico=100%, Δprob máx=0.0212
+18:33:13 INFO 5) Tempo: 3 repetições
+18:33:13 INFO    preparação: 4.2, 3.3, 3.4 ms
+18:33:13 INFO    baixo         SHAP intervencional: 15.3, 13.9, 14.9 ms | sem referência: 4.3, 4.2, 4.4 ms
+18:33:13 INFO    intermediario SHAP intervencional: 15.1, 14.0, 13.9 ms | sem referência: 4.4, 4.5, 4.3 ms
+18:33:13 INFO    alto          SHAP intervencional: 14.4, 13.7, 14.8 ms | sem referência: 4.2, 4.3, 4.3 ms
+18:33:14 INFO Pronto em 123 s. Resultados em /home/user/cloudwalk-desafio-1/01-explicabilidade/resultados

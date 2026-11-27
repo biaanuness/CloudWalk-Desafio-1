@@ -1,0 +1,5 @@
+.venv
+.git
+01-explicabilidade/resultados_rapido
+**/__pycache__
+saida
