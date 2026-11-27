@@ -2,7 +2,7 @@
 
 **Reproduzir** (na raiz do repositório): `uv sync --frozen && uv run --frozen python 01-explicabilidade/analise_explicabilidade.py`
 (~2 min em 4 CPUs). Não há dependências além das fixadas em `uv.lock`. Saídas em `01-explicabilidade/resultados/`
-(`resultados.json`, `fidelidade_remocao.csv`, `casos.png`, `referencia_validacao.png`). Semente `20261117`, CatBoost com 2 threads.
+(`execucao.log`, `resultados.json`, `explicacoes_casos.csv`, `fidelidade_remocao.csv` e figuras). Código organizado por etapa em `explicabilidade/`; arquitetura e demonstração rápida (`--rapido`) no README da raiz. Semente `20261117`, CatBoost com 2 threads.
 Duas execuções seguidas produziram resultados idênticos (exceto tempos).
 
 ## 1. Método e escala
